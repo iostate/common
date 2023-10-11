@@ -2,7 +2,7 @@ import { Subjects } from './subjects';
 import { Stan } from 'node-nats-streaming';
 
 interface Event {
-  subject: Subjects.TicketCreated;
+  subject: Subjects;
   data: any;
 }
 
