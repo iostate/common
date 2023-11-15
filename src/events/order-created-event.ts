@@ -7,6 +7,7 @@ export interface OrderCreatedEvent {
   data: {
     id: string;
     userId: string;
+    version: number;
     // could be used in future
     status: OrderStatus;
     // actually a DATE in OrderDoc but represented as a string

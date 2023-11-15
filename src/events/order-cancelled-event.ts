@@ -4,6 +4,7 @@ export interface OrderCancelledEvent {
   subject: Subjects.OrderCancelled;
   data: {
     id: string;
+    version: number;
     userId: string; // TODO: use this in future to send emails that order was cancelled
     ticket: {
       id: string;
