@@ -5,10 +5,8 @@ export interface OrderCancelledEvent {
   data: {
     id: string;
     version: number;
-    userId: string; // TODO: use this in future to send emails that order was cancelled
     ticket: {
       id: string;
-      price: number; // TODO: use to send email about cancelled order
     };
   };
 }
